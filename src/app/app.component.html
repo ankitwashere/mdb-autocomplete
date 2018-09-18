@@ -1,0 +1,13 @@
+<div class="container">
+<h4>Line manager keyup method called {{lmkeycounter}} times</h4>
+<h4>Requester keyup method called {{reqkeycounter}} times</h4>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<mdb-autocomplete [label]="'Line manager'" name="lineManager"  [(ngModel)]="lineManagerStr" [datasource]="lineManagers"
+                  (keyup)="subscribeToProfileSearch()">
+</mdb-autocomplete>
+<!--<mdb-autocomplete [label]="'Requester'" name="requester"  [(ngModel)]="requesterStr" [datasource]="requesters"
+                  (keyup)="subscribeToRequesterSearch()">
+</mdb-autocomplete>-->
+
+</div>
